@@ -16,23 +16,23 @@ This project analyzes **audio features** of Spotify songs to discover patterns a
 ```
 r-data-analysis/
 ├── scripts/
-│   ├── 00_main.R                    ⭐ RUN THIS FIRST
-│   ├── 01_collect_data.R            📥 Load Spotify data
-│   ├── 02_clean_data.R              🧹 Clean & normalize
-│   ├── 03_dimensionality_reduction.R 📊 PCA analysis
-│   ├── 04_visualize_results.R       📈 Create plots
-│   ├── 05_clustering_insights.R     🎯 K-means clustering
-│   ├── 06_association_rules.R       🔗 Find patterns
-│   └── 07_accuracy_metrics.R        📋 Evaluate quality
-├── data/                            💾 Raw & cleaned data
-├── output/                          📤 Results & visualizations
-├── README.md                        📖 Documentation
-├── QUICKSTART.md                    🚀 Quick start guide
-├── ANALYSIS_GUIDE.md                📊 Association & accuracy
-└── DATA_DICTIONARY.md               📚 Feature definitions
+│   ├── 00_main.R                    
+│   ├── 01_collect_data.R            
+│   ├── 02_clean_data.R              
+│   ├── 03_dimensionality_reduction.R 
+│   ├── 04_visualize_results.R       
+│   ├── 05_clustering_insights.R     
+│   ├── 06_association_rules.R       
+│   └── 07_accuracy_metrics.R        
+├── data/                            
+├── output/                          
+├── README.md                        
+├── QUICKSTART.md                    
+├── ANALYSIS_GUIDE.md                
+└── DATA_DICTIONARY.md               
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Open in RStudio
 ```r
@@ -50,12 +50,12 @@ source("scripts/00_main.R")
 ```
 
 That's it! The script will:
-- ✅ Load Spotify data (sample data included)
-- ✅ Clean and normalize features
-- ✅ Perform PCA dimensionality reduction
-- ✅ Create 5 visualization plots
-- ✅ Cluster songs using K-means
-- ✅ Generate analysis reports
+- Load Spotify data (sample data included)
+- Clean and normalize features
+- Perform PCA dimensionality reduction
+- Create 5 visualization plots
+- Cluster songs using K-means
+- Generate analysis reports
 
 ## 🎼 Spotify Audio Features Analyzed
 
@@ -106,7 +106,7 @@ That's it! The script will:
 - `association_rules_summary.txt` - Key pattern discoveries
 - `accuracy_report.txt` - Model quality evaluation
 
-## 🔧 Data Source Options
+## Data Source Options
 
 ### Option 1: Sample Data (Easiest)
 The script generates 1000 sample Spotify tracks automatically.
@@ -131,20 +131,20 @@ library(spotifyr)
 - **Song Clusters**: Similar songs group together naturally
 - **Correlations**: Which audio features are related
 
-## 💡 Learning Objectives
+## Learning Objectives
 
 After this project, you'll understand:
-- ✅ Data collection from multiple sources
-- ✅ Data cleaning and normalization techniques
-- ✅ PCA and dimensionality reduction
-- ✅ K-means clustering algorithm
-- ✅ Data visualization best practices
-- ✅ Association rule mining (pattern discovery)
-- ✅ Model evaluation metrics (Silhouette, Davies-Bouldin)
-- ✅ Validating and interpreting results
-- ✅ Writing data-driven insights for reports
+- Data collection from multiple sources
+- Data cleaning and normalization techniques
+- PCA and dimensionality reduction
+- K-means clustering algorithm
+- Data visualization best practices
+- Association rule mining (pattern discovery)
+- Model evaluation metrics (Silhouette, Davies-Bouldin)
+- Validating and interpreting results
+- Writing data-driven insights for reports
 
-## 🔗 Association Analysis
+## 🔗Association Analysis
 
 **What it discovers:**
 - Which audio features appear together (e.g., high energy + danceability = pop)
@@ -162,7 +162,7 @@ After this project, you'll understand:
 
 ---
 
-## 📈 Accuracy Metrics
+## Accuracy Metrics
 
 **What it evaluates:**
 
@@ -186,7 +186,7 @@ Purity: 0.72 (GOOD - clusters match genres)
 
 ---
 
-## 🎯 Customization Ideas
+## Customization Ideas
 
 **Easy Extensions:**
 - Change number of clusters: Edit `optimal_k <- 3` in script 05
@@ -200,7 +200,7 @@ Purity: 0.72 (GOOD - clusters match genres)
 - Genre classification using the reduced features
 - Time-series analysis of features over years
 
-## 📚 Dependencies
+## Dependencies
 
 ```r
 # Core analysis
@@ -209,26 +209,3 @@ library(ggplot2)       # Visualization
 library(gridExtra)     # Multi-plot layouts
 library(tidyr)         # Data tidying
 ```
-
-## ⚠️ Notes
-
-- All visualizations are saved as PNG in `output/`
-- Data is normalized before PCA (important!)
-- K-means uses 25 random starts for stability
-- Script includes genre-based coloring for extra insights
-
-## 📝 Project Report Template
-
-Use this to write your project report:
-
-**1. Introduction**: What is Spotify data? Why analyze it?  
-**2. Methods**: Data collection, cleaning, PCA, K-means  
-**3. Results**: Show the 6 visualizations, explain findings  
-**4. Conclusions**: What patterns did you discover?  
-**5. Appendix**: Include code snippets, additional tables  
-
----
-
-**Created for**: Third-year Engineering Data Analysis Project  
-**Language**: R (ggplot2 + dplyr stack)  
-**Difficulty**: Beginner-friendly, low-code format
